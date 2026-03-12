@@ -8,19 +8,10 @@
       name="description"
       content="Placeholder structure for SeanHeffernan.com"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="#">Sean Heffernan</a>
-        <nav class="main-nav">
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+    <header id="site-header"></header>
 
     <main>
       <section class="hero">
@@ -34,7 +25,7 @@
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#work">View Work</a>
-              <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+              <a class="btn btn-secondary" href="/journal/">Read Journal</a>
             </div>
           </div>
           <div class="media-placeholder" aria-label="Hero image placeholder">
@@ -108,16 +99,24 @@
           </p>
         </div>
       </section>
+
+      <section class="journal-preview-section">
+        <div class="container">
+          <h2>Journal</h2>
+          <p class="lead">Weekly updates on work, experiments, and lessons learned.</p>
+          <div class="journal-list" id="journal-preview-list"></div>
+          <p><a class="btn btn-secondary" href="/journal/">View all entries</a></p>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrap">
-        <p>© <span id="year"></span> Sean Heffernan. All rights reserved.</p>
-      </div>
-    </footer>
+    <footer id="site-footer"></footer>
 
+    <script src="/assets/js/site-shell.js"></script>
+    <script src="/assets/js/journal.js"></script>
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+      renderSiteShell({ isHome: true });
+      renderJournalPreview(2);
     </script>
   </body>
 </html>

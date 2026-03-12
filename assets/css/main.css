@@ -128,7 +128,9 @@ h2 {
 
 .work-section,
 .about-section,
-.contact-section {
+.contact-section,
+.journal-preview-section,
+.journal-list-section {
   padding: 3rem 0;
 }
 
@@ -195,6 +197,65 @@ h2 {
   font-size: 0.9rem;
 }
 
+.journal-hero {
+  padding: 4rem 0 2rem;
+}
+
+.journal-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.journal-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.journal-card h3 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.journal-card h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.journal-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.journal-entry {
+  max-width: 760px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.journal-entry section {
+  margin-top: 1.5rem;
+}
+
+.journal-entry ul {
+  padding-left: 1.2rem;
+}
+
+.journal-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.journal-note code {
+  background: #f1eee7;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.1rem 0.35rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.5rem 0;
@@ -204,7 +265,8 @@ h2 {
 @media (max-width: 900px) {
   .hero-grid,
   .about-grid,
-  .card-grid {
+  .card-grid,
+  .journal-list {
     grid-template-columns: 1fr;
   }
 

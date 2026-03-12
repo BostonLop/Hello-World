@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "what-weve-explored-today",
+    "title": "What we've explored today",
+    "date": "2026-03-12",
+    "week": 11,
+    "summary": "A recap of today's decisions: vanilla setup, no-build workflow, and future-proof structure.",
+    "file": "/content/journal/what-weve-explored-today.md"
+  },
+  {
+    "slug": "test",
+    "title": "Test",
+    "date": "2026-03-12",
+    "week": 11,
+    "summary": "A simple test entry to confirm markdown rendering and journal routing.",
+    "file": "/content/journal/test.md"
+  },
+  {
+    "slug": "2026-week-10",
+    "title": "Shipped a cleaner portfolio structure",
+    "date": "2026-03-08",
+    "week": 10,
+    "summary": "Focused on simplifying page layout and creating reusable sections for future updates.",
+    "file": "/content/journal/2026-week-10.md"
+  },
+  {
+    "slug": "2026-week-09",
+    "title": "Started a weekly publishing habit",
+    "date": "2026-03-01",
+    "week": 9,
+    "summary": "Defined a writing format for wins, blockers, and next actions to make weekly posts consistent.",
+    "file": "/content/journal/2026-week-09.md"
+  }
+]
