@@ -23,7 +23,7 @@
     return ""
       + '<article class="journal-card">'
       + '<p class="journal-meta">' + formatDate(entry.date) + " · Week " + escapeHtml(entry.week) + "</p>"
-      + '<h3><a href="/journal/entry/?slug=' + encodeURIComponent(entry.slug) + '">' + escapeHtml(entry.title) + "</a></h3>"
+      + '<h3><a href="/journal/entries/?slug=' + encodeURIComponent(entry.slug) + '">' + escapeHtml(entry.title) + "</a></h3>"
       + "<p>" + escapeHtml(entry.summary) + "</p>"
       + "</article>";
   }
