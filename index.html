@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sean Heffernan</title>
+    <meta
+      name="description"
+      content="Placeholder structure for SeanHeffernan.com"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#">Sean Heffernan</a>
+        <nav class="main-nav">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Creative Developer</p>
+            <h1>Building digital experiences with thoughtful design.</h1>
+            <p class="lead">
+              This is a starter structure inspired by SeanHeffernan.com.
+              Replace text, visuals, and links with your real content.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work">View Work</a>
+              <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+            </div>
+          </div>
+          <div class="media-placeholder" aria-label="Hero image placeholder">
+            <span>HERO IMAGE PLACEHOLDER</span>
+            <small>assets/images/hero-image.jpg</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work-section">
+        <div class="container">
+          <h2>Selected Work</h2>
+          <div class="card-grid">
+            <article class="work-card">
+              <div class="media-placeholder small" aria-label="Project image placeholder">
+                <span>PROJECT IMAGE</span>
+                <small>assets/images/project-01.jpg</small>
+              </div>
+              <h3>Project Title One</h3>
+              <p>Short summary of the project and your role.</p>
+            </article>
+
+            <article class="work-card">
+              <div class="media-placeholder small" aria-label="Project image placeholder">
+                <span>PROJECT IMAGE</span>
+                <small>assets/images/project-02.jpg</small>
+              </div>
+              <h3>Project Title Two</h3>
+              <p>Short summary of the project and your role.</p>
+            </article>
+
+            <article class="work-card">
+              <div class="media-placeholder small" aria-label="Project image placeholder">
+                <span>PROJECT IMAGE</span>
+                <small>assets/images/project-03.jpg</small>
+              </div>
+              <h3>Project Title Three</h3>
+              <p>Short summary of the project and your role.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container about-grid">
+          <div>
+            <h2>About</h2>
+            <p>
+              Add your bio, background, and creative process here.
+            </p>
+          </div>
+          <div class="media-placeholder" aria-label="Portrait image placeholder">
+            <span>PORTRAIT PLACEHOLDER</span>
+            <small>assets/images/about-portrait.jpg</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Replace with your preferred call-to-action and contact details.</p>
+          <div class="icon-row" aria-label="Social icon placeholders">
+            <a href="#" class="icon-placeholder" aria-label="LinkedIn icon placeholder">ICON</a>
+            <a href="#" class="icon-placeholder" aria-label="GitHub icon placeholder">ICON</a>
+            <a href="#" class="icon-placeholder" aria-label="X icon placeholder">ICON</a>
+            <a href="#" class="icon-placeholder" aria-label="Email icon placeholder">ICON</a>
+          </div>
+          <p class="icon-path-note">
+            Suggested icon files: assets/icons/linkedin.svg, github.svg, x.svg, email.svg
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Sean Heffernan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
