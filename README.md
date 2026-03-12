@@ -5,7 +5,7 @@ Framework-free, no-build multi-page static site.
 ## Structure
 - `index.html`: homepage
 - `journal/index.html`: journal listing page
-- `journal/entry/index.html`: journal entry renderer (uses `?slug=`)
+- `journal/entries/index.html`: journal entry renderer (uses `?slug=`)
 - `assets/css/main.css`: shared styles
 - `assets/js/site-shell.js`: shared header/footer shell
 - `assets/js/journal.js`: journal list + entry rendering logic
