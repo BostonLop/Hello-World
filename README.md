@@ -5,3 +5,5 @@ Testing to make a commit, starting a learning journey to become a software devel
 Currently a project manager, so making the leap to actually making things
 
 Looking at starting with Javascript and see where I go from there
+
+Updating to see if I can push back to github
