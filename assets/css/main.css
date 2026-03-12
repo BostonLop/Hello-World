@@ -1,11 +1,11 @@
 :root {
-  --bg: #f8f6f2;
-  --surface: #ffffff;
-  --text: #1e1f1d;
-  --muted: #5b5f57;
-  --line: #d6d3cc;
-  --accent: #c75d2c;
-  --accent-strong: #9a431c;
+  --bg: #0c111a;
+  --surface: #131b29;
+  --text: #e6edf7;
+  --muted: #9aa8bc;
+  --line: #273246;
+  --accent: #5aa9ff;
+  --accent-strong: #2f7cd6;
   --radius: 14px;
   --container: 1120px;
 }
@@ -19,8 +19,8 @@ body {
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 10% 10%, #fffaf0 0%, transparent 45%),
-    radial-gradient(circle at 90% 90%, #efe8db 0%, transparent 42%),
+    radial-gradient(circle at 15% 10%, #17263f 0%, transparent 42%),
+    radial-gradient(circle at 90% 85%, #1a2c46 0%, transparent 38%),
     var(--bg);
   line-height: 1.5;
 }
@@ -33,7 +33,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  background: color-mix(in srgb, var(--bg) 90%, white 10%);
+  background: color-mix(in srgb, var(--bg) 88%, black 12%);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(6px);
 }
@@ -61,6 +61,11 @@ body {
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
+  transition: color 120ms ease;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
 }
 
 .hero {
@@ -114,16 +119,28 @@ h2 {
   border-radius: 999px;
   border: 1px solid transparent;
   font-weight: 600;
+  transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
 }
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: #081120;
+}
+
+.btn-primary:hover {
+  background: #7dbdff;
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
   border-color: var(--line);
   color: var(--text);
+  background: color-mix(in srgb, var(--surface) 75%, transparent);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .work-section,
@@ -145,13 +162,14 @@ h2 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 
 .media-placeholder {
   border: 2px dashed var(--line);
   border-radius: var(--radius);
   min-height: 260px;
-  background: #fbfaf8;
+  background: #0f1724;
   display: grid;
   place-content: center;
   text-align: center;
@@ -190,6 +208,7 @@ h2 {
   text-decoration: none;
   color: var(--muted);
   font-size: 0.72rem;
+  background: #0f1724;
 }
 
 .icon-path-note {
@@ -212,6 +231,7 @@ h2 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 
 .journal-card h3 {
@@ -222,6 +242,11 @@ h2 {
 .journal-card h3 a {
   color: var(--text);
   text-decoration: none;
+  transition: color 120ms ease;
+}
+
+.journal-card h3 a:hover {
+  color: var(--accent);
 }
 
 .journal-meta {
@@ -250,7 +275,7 @@ h2 {
 }
 
 .journal-note code {
-  background: #f1eee7;
+  background: #0f1724;
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 0.1rem 0.35rem;
